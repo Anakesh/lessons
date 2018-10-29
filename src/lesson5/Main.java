@@ -7,8 +7,8 @@ import lesson5.battleunit.Spearman;
 public class Main {
     public static void main(String[] args) {
         Knight knight = new Knight(100, 20);
-        Spearman spearman = new Spearman(40, 70);
+        Knight knight1 = new Knight(100, 20);
 
-        knight.attack(spearman);
+        knight.attack(knight1);
     }
 }
