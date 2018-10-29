@@ -1,8 +1,11 @@
 package lesson6;
 
+import lesson6.battleunit.*;
 import lesson6.calculator.Action;
 import lesson6.calculator.Delenie;
 import lesson6.calculator.Plus;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,22 +13,12 @@ public class Main {
         int a = 9;
         int b = 0;
         Action plus = new Plus(a, b);
+        plus.work();
         plus = new Delenie(a, b);
+        plus.work();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-      /*  Knight knight = new Knight(100, 20);
+        Knight knight = new Knight(100, 20);
         Spearman spearman = new Spearman(60, 70);
 
         Doctor doctor = new Doctor(50, 10);
@@ -47,7 +40,7 @@ public class Main {
 
         Fight fight = new Fight(unit, spearman);
         fight.fight();
-        System.out.println(fight.fightResult());*/
+        System.out.println(fight.fightResult());
 
         // Парадигмы ООП:
         // Абстрацкия
