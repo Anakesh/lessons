@@ -6,7 +6,7 @@ public class HiLoSum {
         HiLow hiLow = split(value);
         return hiLow.hi + hiLow.low;
     }
-    // Пприватный метод, который возвращает экземпляр вложенного класса.
+    // Приватный метод, который возвращает экземпляр вложенного класса.
     private HiLow split(int value) {
         return new HiLow(value >>> 16, value & 0xFFFF);
     }
