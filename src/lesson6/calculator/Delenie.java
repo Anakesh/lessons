@@ -8,13 +8,8 @@ public class Delenie extends Action
         this.work();
     }
 
-    public void work()
+    public int work()
     {
-        if(this.getVar2() == 0)
-        {
-            System.out.println(228.4);
-            return;
-        }
-        System.out.println(this.getVar1()/this.getVar2());
+        return this.getVar1()/this.getVar2(); // TODO обработать деление на 0
     }
 }
