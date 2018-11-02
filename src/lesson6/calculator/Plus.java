@@ -9,8 +9,8 @@ public class Plus extends Action
     }
 
     @Override
-    public void work()
+    public int work()
     {
-        System.out.println(this.getVar1()+this.getVar2());
+        return this.getVar1()+this.getVar2();
     }
 }
