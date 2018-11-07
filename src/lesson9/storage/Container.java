@@ -1,11 +1,12 @@
 package lesson9.storage;
 
-class Container {
-    Object element;
+class Container<T> {
+    T element;
 
     Container next;
 
-    public Container(Object element) {
+    public Container(T element)
+    {
         this.element = element;
     }
 }

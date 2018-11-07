@@ -2,23 +2,24 @@ package lesson9.storage;
 
 import java.util.Iterator;
 
-public class Storage implements Iterable{
-    Container head;
+public class Storage<T> implements List<T>, Iterable{
+    Container<T> head;
 
-    public void add(Object value) {
+    @Override
+    public void add(T value) {
         if (head == null) {
-            head = new Container(value);
+            head = new Container<>(value);
 
             return;
         }
 
-        find(-1).next = new Container(value);
+        find(-1).next = new Container<>(value);
     }
 
-    public Object get(int idx) {
-        Container res = find(idx);
+    public T get(int idx) {
+        Container<T> res = find(idx);
 
-        return res == null ? -1 : res.element;
+        return res == null ? null : res.element;
     }
 
     private Container find(int idx) {
